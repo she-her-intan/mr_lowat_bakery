@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:mr_lowat_bakery/screens/sign_up.dart';
 
 class LoginScreen extends StatelessWidget {
+  const LoginScreen({super.key});
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -29,7 +31,7 @@ class LoginScreen extends StatelessWidget {
                       Navigator.push(
                       context,
                       MaterialPageRoute(
-                      builder: (context) => NewAccount(),
+                      builder: (context) => const NewAccount(),
                 ),
               );
             },
@@ -38,17 +40,17 @@ class LoginScreen extends StatelessWidget {
                       shape: RoundedRectangleBorder(
                         borderRadius: BorderRadius.circular(20),
                       ),
-                      padding: EdgeInsets.symmetric(horizontal: 20, vertical: 10),
+                      padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 10),
                     ),
-                    child: Text(
+                    child: const Text(
                       "Sign Up",
                       style: TextStyle(color: Colors.white),
                     ),
                   ),
                 ),
-                Spacer(),
+                const Spacer(),
                 // Title
-                Text(
+                const Text(
                   "Mr Lowat Bakery",
                   style: TextStyle(
                     fontSize: 30,
@@ -56,7 +58,7 @@ class LoginScreen extends StatelessWidget {
                     color: Colors.black,
                   ),
                 ),
-                SizedBox(height: 5),
+                const SizedBox(height: 5),
                 Text(
                   "Made by hand, from scratch\nwith love",
                   style: TextStyle(
@@ -64,7 +66,7 @@ class LoginScreen extends StatelessWidget {
                     color: Colors.grey[700],
                   ),
                 ),
-                SizedBox(height: 200),
+                const SizedBox(height: 200),
                 // Username Field
                 TextField(
                   decoration: InputDecoration(
@@ -75,13 +77,13 @@ class LoginScreen extends StatelessWidget {
                       borderRadius: BorderRadius.circular(30),
                       borderSide: BorderSide.none,
                     ),
-                    contentPadding: EdgeInsets.symmetric(
+                    contentPadding: const EdgeInsets.symmetric(
                       horizontal: 20,
                       vertical: 15,
                     ),
                   ),
                 ),
-                SizedBox(height: 20),
+                const SizedBox(height: 20),
                 // Password Field
                 TextField(
                   obscureText: true,
@@ -93,13 +95,13 @@ class LoginScreen extends StatelessWidget {
                       borderRadius: BorderRadius.circular(30),
                       borderSide: BorderSide.none,
                     ),
-                    contentPadding: EdgeInsets.symmetric(
+                    contentPadding: const EdgeInsets.symmetric(
                       horizontal: 20,
                       vertical: 15,
                     ),
                   ),
                 ),
-                SizedBox(height: 10),
+                const SizedBox(height: 10),
                 // Forgot Password
                 Align(
                   alignment: Alignment.centerRight,
@@ -113,7 +115,7 @@ class LoginScreen extends StatelessWidget {
                     ),
                   ),
                 ),
-                SizedBox(height: 20),
+                const SizedBox(height: 20),
                 // Log In Button
                 Center(
                   child: ElevatedButton(
@@ -125,15 +127,15 @@ class LoginScreen extends StatelessWidget {
                       shape: RoundedRectangleBorder(
                         borderRadius: BorderRadius.circular(30),
                       ),
-                      padding: EdgeInsets.symmetric(horizontal: 40, vertical: 15),
+                      padding: const EdgeInsets.symmetric(horizontal: 40, vertical: 15),
                     ),
-                    child: Text(
+                    child: const Text(
                       "Log In",
                       style: TextStyle(color: Colors.white),
                     ),
                   ),
                 ),
-                Spacer(),
+                const Spacer(),
               ],
             ),
           ),
