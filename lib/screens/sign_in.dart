@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:mr_lowat_bakery/screens/homepage.dart';
 import 'package:mr_lowat_bakery/screens/sign_up.dart';
 
 class LoginScreen extends StatelessWidget {
@@ -120,7 +121,12 @@ class LoginScreen extends StatelessWidget {
                 Center(
                   child: ElevatedButton(
                     onPressed: () {
-                      // Add log-in logic here
+                       Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                      builder: (context) => const MyWidget(),
+                ),
+              );
                     },
                     style: ElevatedButton.styleFrom(
                       backgroundColor: Colors.orange,
